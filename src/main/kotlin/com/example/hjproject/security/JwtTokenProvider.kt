@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServletRequest
 @Component
 class JwtTokenProvider(private val userDetailsService: UserDetailsService) {
     // JWT를 생성하고 검증하는 컴포넌트
-    private var secretKey = "thisistestusersecretkeyprojectnameismologaaaaaaaaaaaaaaaa"
+    private var secretKey = "thisishjandroidprojectportfolioseceretkeeeeeeeeeeeeeeeeey"
+
 
     // 토큰 유효시간 30분
     private val tokenValidTime = 30 * 60 * 1000L
