@@ -1,5 +1,6 @@
 package com.example.hjproject.exception
 
+import com.example.hjproject.entity.BaseRes
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.RestControllerAdvice
 

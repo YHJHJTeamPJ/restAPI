@@ -1,5 +1,19 @@
 package com.example.hjproject.controller
 
+import com.example.hjproject.UserLoginReq
+import com.example.hjproject.UserLoginRes
+import com.example.hjproject.UserRegisterReq
+import com.example.hjproject.UserRegisterRes
+import com.example.hjproject.entity.User
+import com.example.hjproject.exception.BaseException
+import com.example.hjproject.exception.BaseResponseCode
+import com.example.hjproject.service.UserService
+import org.springframework.http.ResponseEntity
+import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RestController
+
 @RestController
 class UserController(private val userService: UserService, private val passwordEncoder: PasswordEncoder) {
 

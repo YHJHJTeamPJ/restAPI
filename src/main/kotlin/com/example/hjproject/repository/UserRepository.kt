@@ -8,6 +8,11 @@ import java.util.*
 @Repository
 interface UserRepository : JpaRepository<User, Long> {
 
-    //EMAIL을 Where 조건절로 하여, 데이터를 가져올 수 있도록 findByEMAIL() 메소드를 정의
+
     fun findByEmail(email: String): Optional<User>
+
+    fun existsByEmail(email: String): Boolean
+
+
+
 }

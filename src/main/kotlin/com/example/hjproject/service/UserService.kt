@@ -1,10 +1,16 @@
 package com.example.hjproject.service
 
+import com.example.hjproject.UserLoginReq
+import com.example.hjproject.UserLoginRes
+import com.example.hjproject.UserRegisterReq
+import com.example.hjproject.UserRegisterRes
 import com.example.hjproject.entity.User
 import com.example.hjproject.exception.BaseException
 import com.example.hjproject.exception.BaseResponseCode
 import com.example.hjproject.repository.UserRepository
 import com.example.hjproject.security.JwtTokenProvider
+import org.springframework.data.jpa.domain.AbstractPersistable_.id
+import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
 
 @Service
@@ -15,7 +21,7 @@ class UserService(private val userRepository: UserRepository, private val jwtTok
     }
 
     fun existsUser(email: String): Boolean {
-        return userRepository.existsByEmail(email).orElseThrow{BaseException(BaseResponseCode.DUPLICATE_EMAIL)}
+        return userRepository.existsByEmail(email)
     }
 
     fun createUser(userRegisterReq: UserRegisterReq): UserRegisterRes {
