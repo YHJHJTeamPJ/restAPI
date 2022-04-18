@@ -9,7 +9,6 @@ import com.example.hjproject.exception.BaseException
 import com.example.hjproject.exception.BaseResponseCode
 import com.example.hjproject.repository.UserRepository
 import com.example.hjproject.security.JwtTokenProvider
-import org.springframework.data.jpa.domain.AbstractPersistable_.id
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
 

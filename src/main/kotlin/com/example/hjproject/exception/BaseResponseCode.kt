@@ -9,6 +9,6 @@ enum class BaseResponseCode(status: HttpStatus, message: String) {
     USER_NOT_FOUND(HttpStatus.NOT_FOUND, "사용자를 찾을 수 없습니다."),
     OK(HttpStatus.OK, "요청 성공");
 
-    public val status: HttpStatus = status
-    public val message: String = message
+    val status: HttpStatus = status
+    val message: String = message
 }
