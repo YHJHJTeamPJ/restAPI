@@ -1,4 +1,4 @@
-package com.example.hjproject
+package com.example.hjproject.model
 
 import lombok.AllArgsConstructor
 import lombok.Getter

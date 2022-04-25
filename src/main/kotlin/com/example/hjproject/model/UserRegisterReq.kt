@@ -1,4 +1,4 @@
-package com.example.hjproject
+package com.example.hjproject.model
 
 class UserRegisterReq(name: String, email: String, password: String) {
     var name: String = name

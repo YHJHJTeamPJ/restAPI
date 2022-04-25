@@ -1,4 +1,4 @@
-package com.example.hjproject
+package com.example.hjproject.model
 
 class UserLoginReq {
     val email = ""

@@ -1,9 +1,9 @@
 package com.example.hjproject.controller
 
-import com.example.hjproject.UserLoginReq
-import com.example.hjproject.UserLoginRes
-import com.example.hjproject.UserRegisterReq
-import com.example.hjproject.UserRegisterRes
+import com.example.hjproject.model.UserLoginReq
+import com.example.hjproject.model.UserLoginRes
+import com.example.hjproject.model.UserRegisterReq
+import com.example.hjproject.model.UserRegisterRes
 import com.example.hjproject.entity.User
 import com.example.hjproject.exception.BaseException
 import com.example.hjproject.exception.BaseResponseCode
